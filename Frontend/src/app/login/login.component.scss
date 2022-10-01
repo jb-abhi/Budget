@@ -1,0 +1,257 @@
+.login-page {
+  position: relative;
+  background: #ffffff;
+  .login-container-left {
+    // position: absolute;
+    // width: 720px;
+    // height: 770px;
+    // left: 0px;
+    // top: 0px;
+
+    .title {
+      position: absolute;
+      width: 114px;
+      height: 37px;
+      left: 64px;
+      top: 48px;
+
+      font-family: "Archivo";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 37px;
+      /* identical to box height */
+
+      color: #000000;
+    }
+
+    .left-img {
+      // position: absolute;
+      height: 770px;
+      object-fit: contain;
+      // left: 0px;
+      // top: 0px;
+      background: url("/assets/login-man.jpg") no-repeat;
+      background-position: left;
+    }
+  }
+
+  .login-container-right {
+    .top {
+      .title-top {
+        // position: absolute;
+        width: 150px;
+        height: 13px;
+        left: 1196px;
+        top: 23px;
+
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13px;
+        /* identical to box height */
+
+        color: #000000;
+      }
+      .frame-box {
+        box-sizing: border-box;
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 4px 12px;
+        gap: 6px;
+
+        // position: absolute;
+        width: 80px;
+        height: 27px;
+        // left: 1344px;
+        // top: 16px;
+
+        border: 1px solid #000000;
+        border-radius: 5px;
+        .frame {
+          width: 16px;
+          height: 12px;
+
+          border-radius: 4px;
+
+          /* Inside auto layout */
+
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+        }
+        .content {
+          /* Eng */
+          margin-bottom: 0rem;
+          width: 23px;
+          height: 19px;
+
+          font-family: "Archivo";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 160%;
+          /* or 19px */
+
+          letter-spacing: 0.01em;
+
+          color: #000000;
+
+          /* Inside auto layout */
+
+          flex: none;
+          order: 1;
+          flex-grow: 0;
+        }
+
+        .flag {
+          height: 15px;
+          object-fit: contain;
+          position: absolute;
+          top: 22px;
+          right: 58px;
+        }
+        // }
+      }
+    }
+    .login-container {
+      // flex: 1;
+      // position: absolute;
+      // width: 416px;
+      height: 399px;
+      margin-left: 150px;
+      margin-top: 200px;
+      @media (max-width: 991px) {
+        margin-left: 100px;
+        margin-top: 75px;
+        margin-bottom: 50px;
+      }
+      @media (max-width: 768px) {
+        margin-left: 0px;
+        padding: 50px;
+        margin-bottom: 50px;
+      }
+
+      // left: 872px;
+      // top: 200px;
+
+      .login-container-main {
+        // position: absolute;
+        .login-title {
+          // position: absolute;
+          width: 175px;
+          height: 26px;
+          // left: 872px;
+          // top: 200px;
+
+          font-family: "Archivo";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 26px;
+
+          color: #202020;
+        }
+        .login-desc {
+          // width: 335px;
+          // height: 15px;
+          font-family: "Archivo";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 15px;
+
+          color: #707070;
+        }
+      }
+
+      .login-container-input {
+        // position: absolute;
+        // width: 415px;
+        height: 64px;
+
+        .rectangle {
+          box-sizing: border-box;
+
+          // position: absolute;
+          // width: 415px;
+          height: 64px;
+          left: 872px;
+          top: 301px;
+
+          border: 1px solid #005eff;
+          border-radius: 10px 10px 0px 0px;
+
+          .form-group {
+            width: 100%;
+            height: 100%;
+            .email-label,
+            .password-label {
+              font-family: "Archivo";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 13px;
+              color: #707070;
+            }
+            .form-floating > .form-control {
+              height: 62px;
+              font-size: 16px;
+              line-height: 17px;
+              font-weight: 400;
+              font-family: "Archivo";
+              font-style: normal;
+            }
+          }
+        }
+      }
+      .login-container-items {
+        .item-1 {
+          .text {
+            font-family: "Archivo";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 13px;
+            color: #000000;
+          }
+        }
+        .item-2 {
+          font-family: "Archivo";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 13px;
+          color: #000000;
+        }
+      }
+      .btn {
+        width: 100%;
+        height: 65px;
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        color: #ffffff;
+
+        border-radius: 10px;
+        border: solid 1px #005eff;
+      }
+      .link {
+        text-decoration: none;
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13px;
+        color: #000000;
+      }
+    }
+  }
+}

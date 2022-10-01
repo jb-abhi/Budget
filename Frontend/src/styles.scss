@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(236, 236, 236);
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
