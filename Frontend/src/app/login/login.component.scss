@@ -73,18 +73,6 @@
 
         border: 1px solid #000000;
         border-radius: 5px;
-        .frame {
-          width: 16px;
-          height: 12px;
-
-          border-radius: 4px;
-
-          /* Inside auto layout */
-
-          flex: none;
-          order: 0;
-          flex-grow: 0;
-        }
         .content {
           /* Eng */
           margin-bottom: 0rem;
@@ -112,9 +100,9 @@
         .flag {
           height: 15px;
           object-fit: contain;
-          position: absolute;
-          top: 22px;
-          right: 58px;
+          // position: absolute;
+          // top: 22px;
+          // right: 58px;
         }
         // }
       }
@@ -146,6 +134,7 @@
           // position: absolute;
           width: 175px;
           height: 26px;
+
           // left: 872px;
           // top: 200px;
 
