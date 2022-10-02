@@ -34,6 +34,7 @@ export class DashboardComponent implements OnInit {
   isPhoneVisible: boolean = true;
   isCategoryVisible: boolean = true;
   shorten: boolean = true;
+  shorten2: boolean = true;
   isTypeVisible: boolean = true;
   isAmountVisible: boolean = true;
 
@@ -66,6 +67,7 @@ export class DashboardComponent implements OnInit {
       .observe(['(max-width:415px)'])
       .subscribe((result: BreakpointState) => {
         this.isAmountVisible = result.matches ? false : true;
+        this.shorten2 = result.matches ? true : false;
       });
   }
 

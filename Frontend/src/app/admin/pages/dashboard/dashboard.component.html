@@ -81,14 +81,14 @@
                 <th class="heading" *ngIf="isCategoryVisible" scope="col">
                   TRANSACTION CATEGORY
                 </th>
-                <th class="heading" scope="col">
+                <th class="heading" *ngIf="isAmountVisible" scope="col">
                   {{ shorten ? "AMOUNT" : "TRANSACTION AMOUNT" }}
                 </th>
                 <th class="heading" *ngIf="isTypeVisible" scope="col">
                   ACCOUNT TYPE
                 </th>
-                <th class="heading" *ngIf="isAmountVisible" scope="col">
-                  BALANCE AMOUNT
+                <th class="heading" scope="col">
+                  {{ shorten2 ? "BALANCE" : "BALANCE AMOUNT" }}
                 </th>
                 <th class="heading" scope="col">''</th>
               </tr>
