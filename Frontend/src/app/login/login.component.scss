@@ -33,6 +33,13 @@
       // top: 0px;
       background: url("/assets/login-man.jpg") no-repeat;
       background-position: left;
+
+      @media (max-width: 770px) {
+        background-position: -250px -100px;
+      }
+      @media (max-width: 992px) {
+        background-position: -250px -100px;
+      }
     }
   }
 
