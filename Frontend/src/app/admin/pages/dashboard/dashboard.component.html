@@ -49,36 +49,7 @@
         </div>
         <div
           class="item d-flex align-items-start flex-column col-xl-3 col-lg-3 col-md-3"
-        >
-          <h4 class="item-head">Savings Account</h4>
-          <h2 class="item-body">1,500</h2>
-          <div class="tag d-flex align-items-center justify-content-center">
-            <div
-              class="banner d-flex align-items-center justify-content-center"
-            >
-              <h4 class="number mb-0">2.36%</h4>
-              <span class="material-symbols-outlined arrow"> north </span>
-            </div>
-            <h4 class="item-footer mb-0">Since last month</h4>
-          </div>
-        </div>
-        <div
-          class="item d-flex align-items-start flex-column col-xl-3 col-lg-3 col-md-3"
-        >
-          <h4 class="item-head">Savings Account</h4>
-          <h2 class="item-body">1,500</h2>
-          <div class="tag d-flex align-items-center justify-content-center">
-            <div
-              class="banner d-flex align-items-center justify-content-center"
-            >
-              <h4 class="number mb-0">2.36%</h4>
-              <span class="material-symbols-outlined arrow"> north </span>
-            </div>
-            <h4 class="item-footer mb-0">Since last month</h4>
-          </div>
-        </div>
-        <div
-          class="item d-flex align-items-start flex-column col-xl-3 col-lg-3 col-md-3"
+          *ngFor="let _ of [].constructor(3)"
         >
           <h4 class="item-head">Savings Account</h4>
           <h2 class="item-body">1,500</h2>
@@ -105,13 +76,13 @@
           <table class="table-content table table-hover">
             <thead class="table-headings">
               <tr>
-                <th class="heading" scope="col">USERID/NAME</th>
-                <th class="heading" scope="col">PHONE NUMBER</th>
-                <th class="heading" scope="col">TRANSACTION CATEGORY</th>
-                <th class="heading" scope="col">TRANSACTION AMOUNT</th>
-                <th class="heading" scope="col">ACCOUNT TYPE</th>
-                <th class="heading" scope="col">BALANCE AMOUNT</th>
-                <th class="heading" scope="col"></th>
+                <th
+                  class="heading"
+                  *ngFor="let heading of headings"
+                  scope="col"
+                >
+                  {{ heading }}
+                </th>
               </tr>
             </thead>
             <tbody class="table-body">
@@ -134,66 +105,6 @@
                 <td class="row-data bold">$6000</td>
                 <td class="row-data"></td>
               </tr>
-              <!-- <tr scope="row">
-                <td class="row-data bold">
-                  Samantha <br />
-                  <span class="sub-data">ID 123456789</span>
-                </td>
-                <td class="row-data">+91 9876543210</td>
-                <td class="row-data">
-                  Income <br />
-                  <span class="sub-data">Salary</span>
-                </td>
-                <td class="row-data bold">$200</td>
-                <td class="row-data">Savings</td>
-                <td class="row-data bold">$6000</td>
-                <td class="row-data"></td>
-              </tr>
-              <tr scope="row">
-                <td class="row-data bold">
-                  Catherine <br />
-                  <span class="sub-data">ID 123456789</span>
-                </td>
-                <td class="row-data">+91 9876543210</td>
-                <td class="row-data">
-                  Income <br />
-                  <span class="sub-data">Salary</span>
-                </td>
-                <td class="row-data bold">$200</td>
-                <td class="row-data">Savings</td>
-                <td class="row-data bold">$6000</td>
-                <td class="row-data"></td>
-              </tr>
-              <tr scope="row">
-                <td class="row-data bold">
-                  Monicca James<br />
-                  <span class="sub-data">ID 123456789</span>
-                </td>
-                <td class="row-data">+91 9876543210</td>
-                <td class="row-data">
-                  Income <br />
-                  <span class="sub-data">Salary</span>
-                </td>
-                <td class="row-data bold">$200</td>
-                <td class="row-data">Savings</td>
-                <td class="row-data bold">$6000</td>
-                <td class="row-data"></td>
-              </tr>
-              <tr scope="row">
-                <td class="row-data bold">
-                  Ileana Sam<br />
-                  <span class="sub-data">ID 123456789</span>
-                </td>
-                <td class="row-data">+91 9876543210</td>
-                <td class="row-data">
-                  Income <br />
-                  <span class="sub-data">Salary</span>
-                </td>
-                <td class="row-data bold">$200</td>
-                <td class="row-data">Savings</td>
-                <td class="row-data bold">$6000</td>
-                <td class="row-data"></td>
-              </tr> -->
             </tbody>
           </table>
           <div

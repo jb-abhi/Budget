@@ -16,6 +16,17 @@ export class DashboardComponent implements OnInit {
     'Monica James',
     'Ileana Sam',
   ];
+
+  headings: string[] = [
+    'USERID/NAME',
+    'PHONE NUMBER',
+    'TRANSACTION CATEGORY',
+    'TRANSACTION AMOUNT',
+    'ACCOUNT TYPE',
+    'BALANCE AMOUNT',
+    '',
+  ];
+
   constructor(private render: Renderer2, private _eref: ElementRef) {}
   prevParentEl: any;
   ngOnInit(): void {}
