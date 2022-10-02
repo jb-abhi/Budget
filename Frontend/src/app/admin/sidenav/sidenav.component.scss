@@ -4,6 +4,10 @@
   background-color: #ffffff;
   height: 100%;
 
+  @media (max-width: 785px) {
+    display: none;
+  }
+
   .title {
     width: 114px;
     height: 37px;
