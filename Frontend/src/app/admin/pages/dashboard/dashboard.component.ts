@@ -27,6 +27,9 @@ export class DashboardComponent implements OnInit {
     '',
   ];
 
+  end: string = '';
+  clicked: number = -1;
+
   constructor(private render: Renderer2, private _eref: ElementRef) {}
   prevParentEl: any;
   ngOnInit(): void {}
@@ -37,13 +40,12 @@ export class DashboardComponent implements OnInit {
     }
   }
 
-  onRowClick(event: any, name: any, i: number) {
+  onRowClick(event: any, i: number) {
     if (this.prevParentEl) {
       this.render.removeClass(this.prevParentEl, 'table-active');
     }
     this.render.addClass(event.target.parentElement, 'table-active');
-    console.log(event.target.parentElement);
-    console.log(name, i);
+    this.clicked = i;
     this.prevParentEl = event.target.parentElement;
   }
 }

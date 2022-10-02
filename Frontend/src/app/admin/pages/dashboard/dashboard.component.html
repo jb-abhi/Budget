@@ -89,7 +89,7 @@
               <tr
                 scope="row"
                 *ngFor="let name of names; let i = index"
-                (click)="onRowClick($event, name, i)"
+                (click)="onRowClick($event, i)"
               >
                 <td class="row-data bold">
                   {{ name }}<br />
@@ -103,7 +103,11 @@
                 <td class="row-data bold">$200</td>
                 <td class="row-data">Savings</td>
                 <td class="row-data bold">$6000</td>
-                <td class="row-data"></td>
+                <td
+                  class="row-data d-flex align-items-center justify-content-center mt-4 end"
+                >
+                  {{ clicked === i ? "View" : "" }}
+                </td>
               </tr>
             </tbody>
           </table>
