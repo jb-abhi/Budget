@@ -37,6 +37,7 @@ export class DashboardComponent implements OnInit {
   onClick(event: any) {
     if (this.prevParentEl && !this._eref.nativeElement.contains(event.target)) {
       this.render.removeClass(this.prevParentEl, 'table-active');
+      this.clicked = -1;
     }
   }
 

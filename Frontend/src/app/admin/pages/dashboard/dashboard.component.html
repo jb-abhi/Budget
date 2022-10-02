@@ -104,9 +104,10 @@
                 <td class="row-data">Savings</td>
                 <td class="row-data bold">$6000</td>
                 <td
+                  *ngIf="clicked === i"
                   class="row-data d-flex align-items-center justify-content-center mt-4 end"
                 >
-                  {{ clicked === i ? "View" : "" }}
+                  View
                 </td>
               </tr>
             </tbody>

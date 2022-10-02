@@ -287,6 +287,16 @@
     width: 98px;
     height: 39px;
     margin: 0px auto;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: #000000;
+    }
+    &:hover > a {
+      color: white;
+    }
+
     a {
       text-decoration: none;
       width: 50px;
@@ -297,6 +307,8 @@
       font-weight: 500;
       font-size: 14px;
       line-height: 15px;
+      transition: 0.3s ease;
+      cursor: pointer;
 
       color: #202020;
     }
