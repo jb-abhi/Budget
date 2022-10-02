@@ -1,0 +1,77 @@
+.dashboard-area {
+  width: 445px;
+  height: 109px;
+  margin-top: 48px;
+  padding-left: 24px;
+
+  .content {
+    width: 350px;
+    height: 53px;
+
+    .heading {
+      width: 123px;
+      height: 26px;
+
+      font-family: "Archivo";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 26px;
+
+      color: #202020;
+    }
+    .desc {
+      width: 350px;
+      height: 15px;
+
+      font-family: "Archivo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+
+      color: #707070;
+    }
+  }
+  .info {
+    width: 445px;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    border-radius: 19.5px;
+
+    .info-content {
+      width: 427px;
+      height: 32px;
+
+      .icon {
+        width: 32px;
+        height: 32px;
+        background-color: orange;
+        border-radius: 50%;
+        color: white;
+      }
+      .info-text {
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+
+        color: #202020;
+      }
+      .view {
+        width: 32px;
+        height: 15px;
+
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 15px;
+        text-decoration-line: underline;
+
+        color: #202020;
+      }
+    }
+  }
+}
