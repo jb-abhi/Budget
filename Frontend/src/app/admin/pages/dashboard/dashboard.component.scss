@@ -197,7 +197,7 @@
   }
 }
 .table {
-  width: 1168px;
+  // width: 1168px;
   height: 442px;
   margin-top: 24px;
 
@@ -217,21 +217,20 @@
   }
 
   .table-content {
-    // width: 1168px;
+    width: 1168px;
     // height: 341px;
     .table-headings {
       // width: 1168px;
       height: 37px;
-      border-radius: 5px;
-      background: #eff1f3;
+      // border-radius: 5px;
+      background-color: #eff1f3;
       .heading:nth-child(1) {
         padding-left: 16px;
       }
       .heading:nth-child(7) {
-        width: 87px;
+        width: 60px;
       }
       .heading {
-        // width: 87px;
         height: 13px;
         // margin-right: 90px;
         // padding-left: 16px;
@@ -253,7 +252,7 @@
         padding-left: 16px;
       }
       .row-data {
-        width: 102px;
+        // width: 102px;
         // height: 15px;
 
         font-family: "Archivo";
@@ -267,7 +266,6 @@
       .sub-data {
         width: 76px;
         height: 13px;
-
         font-family: "Archivo";
         font-style: normal;
         font-weight: 400;
@@ -277,9 +275,43 @@
 
         color: #707070;
       }
+      td span.sub-data {
+        pointer-events: none;
+      }
     }
   }
 
   .table-button {
+    border: 1px solid #202020;
+    border-radius: 24px;
+    width: 98px;
+    height: 39px;
+    margin: 0px auto;
+    a {
+      text-decoration: none;
+      width: 50px;
+      height: 15px;
+
+      font-family: "Archivo";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 15px;
+
+      color: #202020;
+    }
   }
+}
+td,
+th {
+  border-style: none;
+  cursor: pointer;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.table-active {
+  background: #edf6fe;
+}
+.table > :not(caption) > * > * {
+  box-shadow: none;
 }

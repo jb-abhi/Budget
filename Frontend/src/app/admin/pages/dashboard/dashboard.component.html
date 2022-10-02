@@ -99,10 +99,10 @@
 <section>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xl-6 col-lg-6 col-md-12">
+      <div class="col-xl-12 col-lg-12 col-md-12">
         <div class="table d-flex flex-column">
           <div class="main-heading">Recently Active Users</div>
-          <table class="table-content">
+          <table class="table-content table table-hover">
             <thead class="table-headings">
               <tr>
                 <th class="heading" scope="col">USERID/NAME</th>
@@ -115,9 +115,13 @@
               </tr>
             </thead>
             <tbody class="table-body">
-              <tr scope="row">
+              <tr
+                scope="row"
+                *ngFor="let name of names; let i = index"
+                (click)="onRowClick($event, name, i)"
+              >
                 <td class="row-data bold">
-                  Monicca James <br />
+                  {{ name }}<br />
                   <span class="sub-data">ID 123456789</span>
                 </td>
                 <td class="row-data">+91 9876543210</td>
@@ -130,7 +134,7 @@
                 <td class="row-data bold">$6000</td>
                 <td class="row-data"></td>
               </tr>
-              <tr scope="row">
+              <!-- <tr scope="row">
                 <td class="row-data bold">
                   Samantha <br />
                   <span class="sub-data">ID 123456789</span>
@@ -189,10 +193,14 @@
                 <td class="row-data">Savings</td>
                 <td class="row-data bold">$6000</td>
                 <td class="row-data"></td>
-              </tr>
+              </tr> -->
             </tbody>
           </table>
-          <div class="table-button"></div>
+          <div
+            class="table-button d-flex align-items-center justify-content-center"
+          >
+            <a type="btn">View All</a>
+          </div>
         </div>
       </div>
     </div>
