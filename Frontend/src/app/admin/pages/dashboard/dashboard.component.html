@@ -65,22 +65,32 @@
     </div>
   </div>
 </section>
-<!-- <section>
+<section>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xl-12 col-lg-12 col-md-12">
-        <div class="table d-flex flex-column">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="table d-flex flex-column mr-5">
           <div class="main-heading">Recently Active Users</div>
           <table class="table-content table table-hover">
             <thead class="table-headings">
               <tr>
-                <th
-                  class="heading"
-                  *ngFor="let heading of headings"
-                  scope="col"
-                >
-                  {{ heading }}
+                <th class="heading" scope="col">USERID/NAME</th>
+                <th class="heading" *ngIf="isPhoneVisible" scope="col">
+                  PHONE NUMBER
                 </th>
+                <th class="heading" *ngIf="isCategoryVisible" scope="col">
+                  TRANSACTION CATEGORY
+                </th>
+                <th class="heading" scope="col">
+                  {{ shorten ? "AMOUNT" : "TRANSACTION AMOUNT" }}
+                </th>
+                <th class="heading" *ngIf="isTypeVisible" scope="col">
+                  ACCOUNT TYPE
+                </th>
+                <th class="heading" *ngIf="isAmountVisible" scope="col">
+                  BALANCE AMOUNT
+                </th>
+                <th class="heading" scope="col">''</th>
               </tr>
             </thead>
             <tbody class="table-body">
@@ -93,13 +103,13 @@
                   {{ name }}<br />
                   <span class="sub-data">ID 123456789</span>
                 </td>
-                <td class="row-data">+91 9876543210</td>
-                <td class="row-data">
+                <td *ngIf="isPhoneVisible" class="row-data">+91 9876543210</td>
+                <td *ngIf="isCategoryVisible" class="row-data">
                   Income <br />
                   <span class="sub-data">Salary</span>
                 </td>
-                <td class="row-data bold">$200</td>
-                <td class="row-data">Savings</td>
+                <td *ngIf="isAmountVisible" class="row-data bold">$200</td>
+                <td *ngIf="isTypeVisible" class="row-data">Savings</td>
                 <td class="row-data bold">$6000</td>
                 <td
                   *ngIf="clicked === i"
@@ -119,4 +129,4 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
