@@ -50,10 +50,8 @@
       }
       .frame-box {
         gap: 3px;
-
         width: 80px;
         height: 27px;
-
         border: 1px solid #000000;
         border-radius: 5px;
 
@@ -103,10 +101,13 @@
 
       .login-container-input {
         height: 64px;
-        .email-border {
+
+        .email-border,
+        .email-input {
           border-radius: 10px 10px 0px 0px;
         }
-        .password-border {
+        .password-border,
+        .password-input {
           border-radius: 0px 0px 10px 10px;
         }
 
@@ -117,13 +118,6 @@
           .form-group {
             width: 100%;
             height: 100%;
-
-            .email-input {
-              border-radius: 10px 10px 0px 0px;
-            }
-            .password-input {
-              border-radius: 0px 0px 10px 10px;
-            }
 
             .email-label,
             .password-label {

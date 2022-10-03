@@ -8,6 +8,15 @@
     display: none;
   }
 
+  @mixin font($weight, $size, $lh) {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lh;
+    color: #000000;
+  }
+
   .title {
     margin-left: 24px;
     padding-top: 40px;
