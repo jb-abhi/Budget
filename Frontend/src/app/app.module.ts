@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { SidenavComponent } from './admin/sidenav/sidenav.component';
 import { DashboardComponent } from './admin/pages/dashboard/dashboard.component';
+import { MenuComponent } from './admin/sidenav/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { DashboardComponent } from './admin/pages/dashboard/dashboard.component'
     AdminComponent,
     SidenavComponent,
     DashboardComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
