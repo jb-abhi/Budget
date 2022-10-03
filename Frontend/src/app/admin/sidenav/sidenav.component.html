@@ -1,37 +1,40 @@
-<div class="container-fluid">
-  <h3 class="title">Budget</h3>
-  <section class="menu">
-    <div class="row">
-      <ul class="nav flex-column">
-        <li class="nav-item active">
-          <a
-            class="nav-link link d-flex align-items-center"
-            aria-current="page"
-            href="#"
-            ><span class="material-symbols-outlined"> dashboard </span
-            >Dashboard</a
-          >
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section>
-    <div class="row">
-      <div class="contact-me d-flex align-items-center">
-        <img class="pro-pic" src="/assets/catherine.jpg" alt="" />
-        <div class="info">
-          <div class="name">Catherine</div>
-          <div class="number d-inline">+91 9876543210</div>
+<div class="sidenav d-flex flex-column">
+  <app-menu (isDisplay)="onClick($event)"></app-menu>
+  <div *ngIf="clicked || above785" class="container-fluid">
+    <h3 class="title">Budget</h3>
+    <section class="menu">
+      <div class="row">
+        <ul class="nav flex-column">
+          <li class="nav-item active">
+            <a
+              class="nav-link link d-flex align-items-center"
+              aria-current="page"
+              href="#"
+              ><span class="material-symbols-outlined"> dashboard </span
+              >Dashboard</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="row">
+        <div class="contact-me d-flex align-items-center">
+          <img class="pro-pic" src="/assets/catherine.jpg" alt="" />
+          <div class="info">
+            <div class="name">Catherine</div>
+            <div class="number d-inline">+91 9876543210</div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="row">
-      <div class="log-out d-flex align-items-center">
-        <span class="material-symbols-outlined logout-icon"> logout </span>
-        <p class="logout d-inline-block mb-0">Log Out</p>
+    </section>
+    <section>
+      <div class="row">
+        <div class="log-out d-flex align-items-center">
+          <span class="material-symbols-outlined logout-icon"> logout </span>
+          <p class="logout d-inline-block mb-0">Log Out</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </div>

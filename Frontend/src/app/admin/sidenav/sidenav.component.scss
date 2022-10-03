@@ -1,94 +1,99 @@
-.container-fluid {
-  width: 240px;
-  border-right: 1px solid #eaeaea;
+.sidenav {
   background-color: #ffffff;
   height: 100%;
+  .container-fluid {
+    width: 240px;
+    border-right: 1px solid #eaeaea;
+    background-color: #ffffff;
+    height: 100%;
 
-  @media (max-width: 785px) {
-    display: none;
-  }
+    @mixin font($weight, $size, $lh) {
+      font-family: "Archivo";
+      font-style: normal;
+      font-weight: $weight;
+      font-size: $size;
+      line-height: $lh;
+      color: #000000;
+    }
 
-  @mixin font($weight, $size, $lh) {
-    font-family: "Archivo";
-    font-style: normal;
-    font-weight: $weight;
-    font-size: $size;
-    line-height: $lh;
-    color: #000000;
-  }
+    .title {
+      margin-left: 24px;
+      padding-top: 40px;
+      width: 114px;
+      height: 37px;
+      @include font(600, 34px, 37px);
 
-  .title {
-    margin-left: 24px;
-    padding-top: 40px;
-    width: 114px;
-    height: 37px;
-    @include font(600, 34px, 37px);
+      color: #202020;
+    }
 
-    color: #202020;
-  }
+    .menu {
+      margin-top: 72px;
 
-  .menu {
-    margin-top: 72px;
+      .active {
+        width: 5px;
+        height: 30px;
+        background: #005eff;
+        border-radius: 0px 5px 5px 0px;
 
-    .active {
-      width: 5px;
-      height: 30px;
-      background: #005eff;
-      border-radius: 0px 5px 5px 0px;
+        .link {
+          margin-left: 21px;
+          @include font(600, 14px, 15px);
 
-      .link {
-        margin-left: 21px;
-        @include font(600, 14px, 15px);
-
-        color: #202020;
+          color: #202020;
+        }
       }
     }
-  }
-  .contact-me {
-    width: 224px;
-    height: 62px;
-    margin-top: 550px;
-    background: #f7f9ff;
-    border-radius: 31px;
-    .pro-pic {
-      margin-right: 12px;
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      border: 1px solid #ffffff;
+    .contact-me {
+      width: 224px;
+      height: 62px;
+      margin-top: 75rem;
+      background: #f7f9ff;
+      border-radius: 31px;
+
+      @media (max-width: 785px) {
+        margin-top: 97rem;
+      }
+
+      .pro-pic {
+        margin-right: 12px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+      }
+      .info {
+        .name {
+          width: 63px;
+          height: 15px;
+          @include font(600, 14px, 15px);
+
+          color: #202020;
+        }
+        .number {
+          width: 91px;
+          height: 13px;
+          @include font(400, 12px, 13px);
+
+          color: #707070;
+        }
+      }
     }
-    .info {
-      .name {
-        width: 63px;
+    .log-out {
+      width: 120px;
+      height: 20px;
+      margin-top: 20px;
+      margin-bottom: 25px;
+      margin-left: 13px;
+      .logout-icon {
+        font-size: 14px;
+      }
+
+      .logout {
         height: 15px;
-        @include font(600, 14px, 15px);
-
-        color: #202020;
-      }
-      .number {
-        width: 91px;
-        height: 13px;
-        @include font(400, 12px, 13px);
-
+        margin-left: 8px;
+        @include font(400, 14px, 15px);
         color: #707070;
       }
-    }
-  }
-  .log-out {
-    width: 120px;
-    height: 20px;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    margin-left: 13px;
-    .logout-icon {
-      font-size: 14px;
-    }
-
-    .logout {
-      height: 15px;
-      margin-left: 8px;
-      @include font(400, 14px, 15px);
-      color: #707070;
     }
   }
 }
