@@ -8,19 +8,21 @@
     display: none;
   }
 
+  @mixin font($weight, $size, $lh) {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lh;
+    color: #000000;
+  }
+
   .title {
-    width: 114px;
-    height: 37px;
     margin-left: 24px;
     padding-top: 40px;
     width: 114px;
     height: 37px;
-    font-family: "Archivo";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 37px;
-    /* identical to box height */
+    @include font(600, 34px, 37px);
 
     color: #202020;
   }
@@ -36,11 +38,8 @@
 
       .link {
         margin-left: 21px;
-        font-family: "Archivo";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 15px;
+        @include font(600, 14px, 15px);
+
         color: #202020;
       }
     }
@@ -48,7 +47,7 @@
   .contact-me {
     width: 224px;
     height: 62px;
-    margin-top: 480px;
+    margin-top: 550px;
     background: #f7f9ff;
     border-radius: 31px;
     .pro-pic {
@@ -62,25 +61,14 @@
       .name {
         width: 63px;
         height: 15px;
-
-        font-family: "Archivo";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 15px;
+        @include font(600, 14px, 15px);
 
         color: #202020;
       }
       .number {
         width: 91px;
         height: 13px;
-
-        font-family: "Archivo";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 13px;
-        /* identical to box height */
+        @include font(400, 12px, 13px);
 
         color: #707070;
       }
@@ -99,13 +87,7 @@
     .logout {
       height: 15px;
       margin-left: 8px;
-
-      font-family: "Archivo";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 15px;
-
+      @include font(400, 14px, 15px);
       color: #707070;
     }
   }
