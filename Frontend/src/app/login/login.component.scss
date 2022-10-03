@@ -1,36 +1,34 @@
+.form-control:focus {
+  border: 1px solid #005eff;
+  outline: 0;
+  box-shadow: none;
+}
+
+@mixin font($weight, $size, $lh) {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lh;
+  color: #000000;
+}
+
 .login-page {
   position: relative;
   background: #ffffff;
   .login-container-left {
-    // position: absolute;
-    // width: 720px;
-    // height: 770px;
-    // left: 0px;
-    // top: 0px;
-
     .title {
       position: absolute;
       width: 114px;
       height: 37px;
       left: 64px;
       top: 48px;
-
-      font-family: "Archivo";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 34px;
-      line-height: 37px;
-      /* identical to box height */
-
-      color: #000000;
+      @include font(600, 34px, 37px);
     }
 
     .left-img {
-      // position: absolute;
       height: 770px;
       object-fit: contain;
-      // left: 0px;
-      // top: 0px;
       background: url("/assets/login-man.jpg") no-repeat;
       background-position: left;
 
@@ -46,36 +44,15 @@
   .login-container-right {
     .top {
       .title-top {
-        // position: absolute;
         width: 150px;
         height: 13px;
-        left: 1196px;
-        top: 23px;
-
-        font-family: "Archivo";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 13px;
-        /* identical to box height */
-
-        color: #000000;
+        @include font(400, 12px, 13px);
       }
       .frame-box {
-        // box-sizing: border-box;
-
-        /* Auto layout */
-
-        // display: flex;
-        // align-items: center;
-        // padding: 4px 12px;
         gap: 3px;
 
-        // position: absolute;
         width: 80px;
         height: 27px;
-        // left: 1344px;
-        // top: 16px;
 
         border: 1px solid #000000;
         border-radius: 5px;
@@ -85,43 +62,18 @@
           padding-top: 10px;
         }
         .content {
-          /* Eng */
-          // margin-bottom: 0rem;
-          // width: 23px;
           padding-top: 5px;
           height: 19px;
-
-          font-family: "Archivo";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 12px;
-          line-height: 160%;
-          /* or 19px */
-
+          @include font(500, 12px, 19px);
           letter-spacing: 0.01em;
-
-          color: #000000;
-
-          /* Inside auto layout */
-
-          flex: none;
-          flex-grow: 0;
         }
-
         .flag {
           height: 15px;
           object-fit: contain;
-          // position: absolute;
-          // top: 22px;
-          // right: 58px;
         }
-        // }
       }
     }
     .login-container {
-      // flex: 1;
-      // position: absolute;
-      // width: 416px;
       height: 399px;
       margin-left: 150px;
       margin-top: 200px;
@@ -136,62 +88,31 @@
         margin-bottom: 50px;
       }
 
-      // left: 872px;
-      // top: 200px;
-
       .login-container-main {
-        // position: absolute;
         .login-title {
-          // position: absolute;
           width: 175px;
           height: 26px;
-
-          // left: 872px;
-          // top: 200px;
-
-          font-family: "Archivo";
-          font-style: normal;
-          font-weight: 600;
-          font-size: 24px;
-          line-height: 26px;
-
+          @include font(600, 24px, 26px);
           color: #202020;
         }
         .login-desc {
-          // width: 335px;
-          // height: 15px;
-          font-family: "Archivo";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 15px;
-
+          @include font(400, 14px, 15px);
           color: #707070;
         }
       }
 
       .login-container-input {
-        // position: absolute;
-        // width: 415px;
         height: 64px;
-
         .email-border {
-          // border: 1px solid #005eff;
           border-radius: 10px 10px 0px 0px;
         }
         .password-border {
-          // border: 1px solid #005eff;
           border-radius: 0px 0px 10px 10px;
         }
 
         .rectangle {
           box-sizing: border-box;
-
-          // position: absolute;
-          // width: 415px;
           height: 65px;
-          left: 872px;
-          top: 301px;
 
           .form-group {
             width: 100%;
@@ -206,20 +127,12 @@
 
             .email-label,
             .password-label {
-              font-family: "Archivo";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 13px;
+              @include font(400, 16px, 13px);
               color: #707070;
             }
             .form-floating > .form-control {
               height: 62px;
-              font-size: 16px;
-              line-height: 17px;
-              font-weight: 400;
-              font-family: "Archivo";
-              font-style: normal;
+              @include font(400, 16px, 17px);
             }
           }
         }
@@ -227,44 +140,25 @@
       .login-container-items {
         .item-1 {
           .text {
-            font-family: "Archivo";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 13px;
-            color: #000000;
+            @include font(400, 12px, 13px);
           }
         }
         .item-2 {
-          font-family: "Archivo";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 12px;
-          line-height: 13px;
-          color: #000000;
+          @include font(400, 12px, 13px);
         }
       }
       .btn {
         width: 100%;
         height: 65px;
-        font-family: "Archivo";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 17px;
+        @include font(400, 16px, 17px);
         color: #ffffff;
 
         border-radius: 10px;
         border: solid 1px #005eff;
       }
       .link {
+        @include font(400, 12px, 13px);
         text-decoration: none;
-        font-family: "Archivo";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 13px;
-        color: #000000;
       }
     }
   }
