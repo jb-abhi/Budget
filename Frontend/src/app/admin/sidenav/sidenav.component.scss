@@ -1,6 +1,7 @@
 .sidenav {
   background-color: #ffffff;
   height: 100%;
+
   .container-fluid {
     width: 240px;
     border-right: 1px solid #eaeaea;
@@ -22,7 +23,6 @@
       width: 114px;
       height: 37px;
       @include font(600, 34px, 37px);
-
       color: #202020;
     }
 
@@ -46,12 +46,15 @@
     .contact-me {
       width: 224px;
       height: 62px;
-      margin-top: 75rem;
+      margin-top: 60rem;
       background: #f7f9ff;
       border-radius: 31px;
 
+      @media (max-width: 1300px) {
+        margin-top: 75rem;
+      }
       @media (max-width: 785px) {
-        margin-top: 97rem;
+        margin-top: 98rem;
       }
 
       .pro-pic {

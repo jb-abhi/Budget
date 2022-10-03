@@ -74,10 +74,6 @@
   padding-left: 24px;
   margin-top: 24px;
 
-  @media (max-width: 545px) {
-    justify-content: center;
-  }
-
   .item:nth-child(even) {
     background: #4a9c88;
   }
