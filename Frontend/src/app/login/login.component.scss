@@ -175,21 +175,35 @@
         // width: 415px;
         height: 64px;
 
+        .email-border {
+          // border: 1px solid #005eff;
+          border-radius: 10px 10px 0px 0px;
+        }
+        .password-border {
+          // border: 1px solid #005eff;
+          border-radius: 0px 0px 10px 10px;
+        }
+
         .rectangle {
           box-sizing: border-box;
 
           // position: absolute;
           // width: 415px;
-          height: 64px;
+          height: 65px;
           left: 872px;
           top: 301px;
-
-          border: 1px solid #005eff;
-          border-radius: 10px 10px 0px 0px;
 
           .form-group {
             width: 100%;
             height: 100%;
+
+            .email-input {
+              border-radius: 10px 10px 0px 0px;
+            }
+            .password-input {
+              border-radius: 0px 0px 10px 10px;
+            }
+
             .email-label,
             .password-label {
               font-family: "Archivo";
