@@ -18,25 +18,15 @@ export class DashboardComponent implements OnInit {
     'Ileana Sam',
   ];
 
-  headings: string[] = [
-    'USERID/NAME',
-    'PHONE NUMBER',
-    'TRANSACTION CATEGORY',
-    'TRANSACTION AMOUNT',
-    'ACCOUNT TYPE',
-    'BALANCE AMOUNT',
-    '',
-  ];
-
   end: string = '';
   clicked: number = -1;
 
   isPhoneVisible: boolean = true;
   isCategoryVisible: boolean = true;
-  shorten: boolean = true;
-  shorten2: boolean = true;
   isTypeVisible: boolean = true;
   isAmountVisible: boolean = true;
+  shorten: boolean = true;
+  shorten2: boolean = true;
 
   constructor(
     private render: Renderer2,
